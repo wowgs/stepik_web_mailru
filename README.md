@@ -1,1 +1,1 @@
-# stepik_wtb_mailru
+# stepik_web_mailru
