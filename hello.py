@@ -12,7 +12,9 @@ def task1():
     res = res.split('&')
     res = '\n'.join(res)
 
-    return Response(res, mimetype='text/plain')
+    r = Response(response=res, mimetype='text/plain', status=200)
+    r.headers['Content-Type'] = "text/plain; charset=utf-8"
+    return r
 
 
 if __name__ == '__main__':
