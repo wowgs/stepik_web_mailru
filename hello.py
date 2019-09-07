@@ -13,7 +13,7 @@ def task1():
     res = '\n'.join(res)
 
     r = Response(response=res, mimetype='text/plain', status=200)
-    r.headers['Content-Type'] = "text/plain; charset=utf-8"
+    r.headers['Content-Type'] = "text/plain"
     return r
 
 
